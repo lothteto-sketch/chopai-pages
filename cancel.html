@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chop AI — Paiement annulé</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      background: #FFF8F0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      padding: 24px;
+    }
+    .card {
+      background: white;
+      border-radius: 20px;
+      padding: 40px 32px;
+      text-align: center;
+      max-width: 360px;
+      width: 100%;
+      box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+    }
+    .emoji { font-size: 64px; margin-bottom: 16px; }
+    h1 { font-size: 22px; color: #1a1a1a; margin-bottom: 12px; }
+    p { font-size: 15px; color: #666; line-height: 1.5; margin-bottom: 28px; }
+    .btn {
+      display: block;
+      width: 100%;
+      background: #E8501A;
+      color: white;
+      border: none;
+      border-radius: 14px;
+      padding: 16px;
+      font-size: 16px;
+      font-weight: 600;
+      cursor: pointer;
+    }
+    .btn:active { opacity: 0.85; }
+  </style>
+</head>
+<body>
+  <div class="card">
+    <div class="emoji">😔</div>
+    <h1>Paiement non abouti</h1>
+    <p>Le paiement n'a pas fonctionné. Tu peux réessayer depuis l'application.</p>
+    <button class="btn" onclick="closeAndReturn()">
+      Réessayer — retour dans l'app
+    </button>
+  </div>
+  <script>
+    function closeAndReturn() {
+      window.close()
+      setTimeout(function() {
+        window.history.back()
+      }, 200)
+    }
+  </script>
+</body>
+</html>
