@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Politique de confidentialité — Chop AI</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      background: #0F2B1F;
+      color: #F6F3EC;
+      min-height: 100vh;
+    }
+    header {
+      background: #0F2B1F;
+      padding: 32px 24px 24px;
+      border-bottom: 1px solid rgba(255,255,255,0.1);
+    }
+    .logo { font-size: 28px; font-weight: 700; color: #F6F3EC; }
+    .logo span { color: #C47A1F; }
+    .tagline { font-size: 13px; color: rgba(255,255,255,0.5); margin-top: 4px; }
+    main {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 40px 24px 80px;
+    }
+    h1 { font-size: 26px; font-weight: 700; margin-bottom: 8px; }
+    .date { font-size: 13px; color: rgba(255,255,255,0.5); margin-bottom: 40px; }
+    h2 {
+      font-size: 17px;
+      font-weight: 600;
+      color: #C47A1F;
+      margin: 32px 0 12px;
+      padding-bottom: 6px;
+      border-bottom: 1px solid rgba(196,122,31,0.3);
+    }
+    p { font-size: 15px; line-height: 1.7; color: rgba(255,255,255,0.8); margin-bottom: 12px; }
+    ul { padding-left: 20px; margin-bottom: 12px; }
+    li { font-size: 15px; line-height: 1.7; color: rgba(255,255,255,0.8); margin-bottom: 6px; }
+    .highlight {
+      background: rgba(196,122,31,0.12);
+      border-left: 3px solid #C47A1F;
+      padding: 12px 16px;
+      border-radius: 4px;
+      margin: 16px 0;
+    }
+    .highlight p { margin-bottom: 0; }
+    a { color: #C47A1F; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    footer {
+      text-align: center;
+      padding: 24px;
+      font-size: 13px;
+      color: rgba(255,255,255,0.3);
+      border-top: 1px solid rgba(255,255,255,0.08);
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="logo">Chop <span>AI</span></div>
+  <div class="tagline">Chop African. Stay Fit.</div>
+</header>
+
+<main>
+  <h1>Politique de confidentialité</h1>
+  <p class="date">Dernière mise à jour : 27 juin 2026</p>
+
+  <div class="highlight">
+    <p>Chop AI respecte le Règlement Général sur la Protection des Données (RGPD — UE 2016/679). Tes données de santé ne sont jamais vendues, ni partagées avec des tiers à des fins publicitaires.</p>
+  </div>
+
+  <h2>1. Qui sommes-nous ?</h2>
+  <p>Chop AI est une application mobile de nutrition spécialisée dans la cuisine africaine, développée par un développeur indépendant basé en France. Contact : <a href="mailto:lothteto@gmail.com">lothteto@gmail.com</a></p>
+
+  <h2>2. Données collectées</h2>
+  <p>Nous collectons uniquement les données nécessaires au fonctionnement de l'application :</p>
+  <ul>
+    <li><strong>Compte :</strong> adresse e-mail, nom (optionnel)</li>
+    <li><strong>Santé (avec consentement explicite) :</strong> poids, taille, âge, sexe, objectif calorique</li>
+    <li><strong>Usage :</strong> repas enregistrés, scans effectués, recettes consultées</li>
+    <li><strong>Paiement :</strong> statut d'abonnement uniquement (aucune donnée de carte bancaire — géré par Stripe)</li>
+  </ul>
+
+  <h2>3. Photos et IA</h2>
+  <div class="highlight">
+    <p>Les photos que tu prends pour identifier un plat sont envoyées à notre serveur pour analyse par l'IA, puis <strong>immédiatement détruites</strong>. Aucune photo n'est stockée en base de données ou sur nos serveurs.</p>
+  </div>
+
+  <h2>4. Comment nous utilisons tes données</h2>
+  <ul>
+    <li>Calculer tes calories et macronutriments</li>
+    <li>Personnaliser tes recommandations nutritionnelles</li>
+    <li>Gérer ton abonnement Chop AI Pro</li>
+    <li>Améliorer l'application (données agrégées, anonymisées)</li>
+  </ul>
+  <p>Nous n'utilisons jamais tes données à des fins publicitaires et ne les revendons jamais à des tiers.</p>
+
+  <h2>5. Stockage et sécurité</h2>
+  <ul>
+    <li>Données hébergées sur <strong>Supabase</strong> (serveurs UE)</li>
+    <li>Chiffrement AES-256 pour les données sensibles sur l'appareil</li>
+    <li>Tokens d'authentification stockés dans l'enclave sécurisée de ton téléphone</li>
+    <li>Connexion HTTPS obligatoire pour tous les échanges</li>
+    <li>Row Level Security (RLS) : tu ne peux voir que tes propres données</li>
+  </ul>
+
+  <h2>6. Tes droits (RGPD)</h2>
+  <p>Conformément au RGPD, tu disposes des droits suivants :</p>
+  <ul>
+    <li><strong>Accès (Art. 15) :</strong> exporter toutes tes données en JSON depuis Paramètres</li>
+    <li><strong>Rectification (Art. 16) :</strong> modifier tes données depuis ton profil</li>
+    <li><strong>Effacement (Art. 17) :</strong> supprimer ton compte depuis Paramètres — effectif sous 30 jours</li>
+    <li><strong>Portabilité (Art. 20) :</strong> export JSON disponible dans l'app</li>
+    <li><strong>Opposition (Art. 21) :</strong> contact par e-mail</li>
+  </ul>
+  <p>Pour exercer tes droits : <a href="mailto:lothteto@gmail.com">lothteto@gmail.com</a></p>
+
+  <h2>7. Cookies et trackers</h2>
+  <p>Chop AI n'utilise aucun cookie de tracking publicitaire. Aucune régie publicitaire. Aucun SDK de suivi comportemental.</p>
+
+  <h2>8. Partage avec des tiers</h2>
+  <ul>
+    <li><strong>Supabase</strong> — base de données et authentification (UE)</li>
+    <li><strong>Stripe</strong> — traitement des paiements (ne reçoit jamais tes données de santé)</li>
+    <li><strong>Anthropic (Claude AI)</strong> — analyse des photos de plats uniquement (images non conservées)</li>
+  </ul>
+
+  <h2>9. Données des mineurs</h2>
+  <p>Chop AI n'est pas destiné aux personnes de moins de 16 ans. Nous ne collectons pas sciemment des données de mineurs.</p>
+
+  <h2>10. Modifications</h2>
+  <p>En cas de modification substantielle de cette politique, tu seras notifié dans l'application. La date de dernière mise à jour est indiquée en haut de cette page.</p>
+
+  <h2>11. Contact & réclamations</h2>
+  <p>Pour toute question : <a href="mailto:lothteto@gmail.com">lothteto@gmail.com</a></p>
+  <p>Tu as le droit de déposer une réclamation auprès de la <strong>CNIL</strong> : <a href="https://www.cnil.fr" target="_blank">cnil.fr</a></p>
+</main>
+
+<footer>
+  © 2026 Chop AI — Chop African. Stay Fit.
+</footer>
+
+</body>
+</html>
